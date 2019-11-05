@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*background properties and default syles*/
+body {
+	background: #111111;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", Arial;
+	font-size: 20px;
+}
+ul, li, p, img, a, h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	color: inherit;
+}
+.clear {
+	clear: both;
+}
+
+/*navigation*/
+.navigation1 {
+	height: 50px;
+	background: rgba(102,94,63,0);
+	margin-bottom: 100px;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	z-index: 3;
+}
+.navigation1 ul {
+	text-align: center;
+}
+.navigation1 ul li {
+	display: inline-block;
+}
+.navigation1 ul li a {
+	font-family: 'Vibur', cursive;
+	color: #e7e3bc;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 24px;
+	color: #eeeeee;
+	padding: 5px 20px 10px 20px;
+	height: 40px;
+	display: inline-block;
+	border-radius: 5px;
+	transition: linear all 1s;
+}
+.navigation1 ul li .b {
+	animation-delay: 0.6s;
+}
+.navigation1 ul li a:hover, .navbar-default ul li.active a {
+	background: rgba(116,237,238,0.5);
+}
+.navigation1 {
+	background: rgba(0,0,0,0);
+	border: none;
+}
+
+/*porsche-background-image*/
+img.porsche {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+/*body-texts*/
+p {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: bold;
+	font-size: 50px;
+	color: #f9720f;
+	text-align: center;
+}
+p.emoji {
+	color: #fff;
+}
+
+/*contact-details*/
+ul.con {
+	margin-top: 60px;
+}
+ul.con li {
+	color: #eeeeee;
+}
+
+/*animation-commands*/
+ @keyframes colourful {
+ 0% {
+color:#77fbfd;
+}
+ 20% {
+color:#2bcc1f;
+}
+ 40% {
+color:#f3d614;
+}
+ 60% {
+color:#cc1f1f;
+}
+ 80% {
+color:#fff;
+}
+ 100% {
+color:#77fbfd;
+}
+}
+/*animation-properties*/
+ul.con li.selective {
+	animation-name: colourful;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+ul.con li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*footer*/
+.footer {
+	color: #000;
+	background: #7f7e84;
+	padding: 5px 0px;
+	margin-top: 60px;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Century Gothic", Arial;
+	border-radius: 4px;
+	font-size: 15px;
+}
+.footer a {
+	color: #fff;
+	font-weight: normal;
+	font-size: 18px;
+	font-family: cursive;
+	text-decoration: none;
+	transition: all ease-out 1s;
+	overflow: visible;
+}
+.footer a:hover {
+	color: #c40000;
+}
